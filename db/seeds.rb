@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+rails g resource User email username password 
+
+rails g resource Post subject body user:belongs_to
+
+rails g resource Comment body user:belongs_to commentable:references{polymorphic}
