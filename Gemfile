@@ -44,3 +44,8 @@ gem "active_model_serializers", "~> 0.10.12"
 gem 'faker', "~> 2.19"
 
 gem 'rack-cors'
+gem "httparty", "~> 0.20.0"
+
+gem 'rest-client'
+
+gem 'json'

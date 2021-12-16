@@ -5,12 +5,11 @@ function App() {
   const [allQuotes, setAllQuotes] = useState("")
 
   
-  // useEffect(()=> {
-  //   fetch('https://zenquotes.io/api/today')
-  //   .then(resp => resp.json())
-  //   .then((allQuotes) => console.log(allQuotes))
-  // }, [])
-  
+  useEffect(()=> {
+    fetch('/quotes')
+    .then(resp => resp.json())
+    .then((allQuotes) => console.log(allQuotes))
+  }, [])
   
   
   return (
