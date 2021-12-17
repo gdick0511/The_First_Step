@@ -52,7 +52,7 @@ function SignUp({onLogin}){
                 </label>
                 <label>
                     <h4>Password</h4>
-                    <input onChange={handleChange} type='text'name='password' placeholder='password'value={signUp.password}/>
+                    <input onChange={handleChange} type='password'name='password' placeholder='password'value={signUp.password}/>
                 </label>
                 <label>
                     <button>Sign Up</button>
