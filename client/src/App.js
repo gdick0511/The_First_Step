@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import LandingPage from "./LandingPage";
 import Home from "./Home";
 import Header from "./Header"
-
+import Main from "./Main";
 function App() {
 
-  const [quote, setQuote] = useState({a:'', q: ''})
+  const [quote, setQuote] = useState({a:'', q:''})
   
    useEffect(()=> {
     fetch('/quotes')
@@ -13,7 +13,6 @@ function App() {
     .then((data) => setQuote({q:data.quote[0].q, a:data.quote[0].a}))
   },[])
   
-  // console.log(quote)
 
   const [user, setUser] = useState(null)
 
@@ -30,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home user={user} quote={quote}/>
+      <Main setUser={setUser} user={user} quote={quote}/>
     </div>
   );
 }
