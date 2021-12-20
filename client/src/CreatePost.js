@@ -1,6 +1,7 @@
 
 function CreatePost(){
 
+
     return(
         <div>
             <form>
