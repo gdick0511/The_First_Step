@@ -12,6 +12,13 @@ function CreatePost(){
                     <h4>Body</h4>
                     <textarea type='text' name='body' placeholder='share something...'></textarea>
                 </label>
+                <label>
+                    <div>
+                        <button>
+                            Share it
+                        </button>
+                    </div>
+                </label>
             </form>
         </div>
     )

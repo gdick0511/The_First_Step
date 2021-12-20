@@ -1,23 +1,12 @@
-import {Route, Switch} from 'react-router-dom';
-import LandingPage from './LandingPage';
-import NavBar from "./Navbar";
-import Feed from "./Feed"
-import Home from './Home';
+import Logo from './Logo.png'
 
-function Header({setUser}){
+
+function Header(){
 
     return(
         <div>
+            <img src={Logo}/>
             <h1>The First Step</h1>
-            {/* <NavBar onLogout={setUser}/>
-            <Switch>
-                <Route exact path='/home'>
-                    <Home />
-                </Route>
-                <Route exact path='/feed'>
-                    <Feed />
-                </Route>
-            </Switch> */}
         </div>
     )
 }

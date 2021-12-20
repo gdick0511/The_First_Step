@@ -9,7 +9,6 @@ function Main({setUser, quote, user}){
 
     return(
         <div>
-            {/* <Home quote={quote} user={user}/> */}
             <NavBar onLogout={setUser}/>
             <Switch>
                 <Route exact path='/home'>

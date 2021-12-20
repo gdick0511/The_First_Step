@@ -3,9 +3,11 @@ import LandingPage from "./LandingPage";
 import Home from "./Home";
 import Header from "./Header"
 import Main from "./Main";
+
+
 function App() {
 
-  const [quote, setQuote] = useState({a:'', q:''})
+  const [quote, setQuote] = useState([])
   
    useEffect(()=> {
     fetch('/quotes')

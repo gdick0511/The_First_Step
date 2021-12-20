@@ -1,7 +1,20 @@
 import React from "react"
 import { NavLink, Link, useHistory } from "react-router-dom"
 
-function NavBar(){
+function NavBar({onLogout}){
+
+    const history = useHistory()
+
+    function handleLogOut(){
+        fetch('/logout', {
+            method: 'DELETE',
+        }).then((resp) => {
+            if (resp.ok) {
+                onLogout(null)
+            }
+            history.push('/home')
+        })
+    }
 
     return(
         <div>
@@ -17,7 +30,7 @@ function NavBar(){
             <NavLink className='navlinks' to='/resources'>
                 Resources
             </NavLink>
-            <button as={Link} to='/'>
+            <button as={Link} to='/' onClick={handleLogOut}>
                 Logout 
             </button>
         </div>
