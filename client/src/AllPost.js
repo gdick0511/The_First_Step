@@ -21,11 +21,9 @@ function AllPost({allPost, setAllPost, user}){
     return(
         <div>
             <h1>All Post</h1>
+            <button onClick={handleCreatePost}>{showCreatePost ? "Cancel":"Create Post"}</button> 
+                {showCreatePost ? <CreatePost allPost={allPost} setAllPost={setAllPost} user={user}/>: null}
             {current_users_post_mapped}
-            <button onClick={handleCreatePost}>
-                Create Post
-            </button>
-                {showCreatePost ? <CreatePost allPost={allPost} setAllPost={setAllPost} user={user} /> : null}
         </div>
     )
 }
