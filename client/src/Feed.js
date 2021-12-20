@@ -1,15 +1,15 @@
 import {useState, useEffect} from 'react'
 import FeedCard from './FeedCard'
 
-function Feed(){
+function Feed({allPost, setAllPost}){
 
-    const [allPost, setAllPost] = useState([])
+    // const [allPost, setAllPost] = useState([])
     
-    useEffect(() => {
-        fetch('/posts')
-        .then((resp) => resp.json())
-        .then((allPost) => setAllPost(allPost))
-    },[])
+    // useEffect(() => {
+    //     fetch('/posts')
+    //     .then((resp) => resp.json())
+    //     .then((allPost) => setAllPost(allPost))
+    // },[])
 
     const userPosts = allPost.map((p) => {
 
