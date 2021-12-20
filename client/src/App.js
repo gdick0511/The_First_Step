@@ -8,14 +8,20 @@ import Main from "./Main";
 function App() {
 
   const [quote, setQuote] = useState([])
+  const [allPost, setAllPost] = useState([])
   
    useEffect(()=> {
     fetch('/quotes')
     .then(resp => resp.json())
     .then((data) => setQuote({q:data.quote[0].q, a:data.quote[0].a}))
   },[])
+    
+  useEffect(() => {
+      fetch('/posts')
+      .then((resp) => resp.json())
+      .then((allPost) => setAllPost(allPost))
+  },[])
   
-
   const [user, setUser] = useState(null)
 
   useEffect(() => {
@@ -31,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main setUser={setUser} user={user} quote={quote}/>
+      <Main  allPost={allPost} setAllPost={setAllPost} setUser={setUser} user={user} quote={quote}/>
     </div>
   );
 }

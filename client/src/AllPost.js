@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import CreatePost from './CreatePost'
 
-function AllPost(){
+function AllPost({allPost, setAllPost, user}){
 
     const [usersPost, setUsersPost] = useState([])
     const [showCreatePost, setShowCreatePost] =useState(false)
@@ -18,7 +18,7 @@ function AllPost(){
             <button onClick={handleCreatePost}>
                 Create Post
             </button>
-                {showCreatePost ? <CreatePost /> : null}
+                {showCreatePost ? <CreatePost allPost={allPost} setAllPost={setAllPost} user={user}/> : null}
         </div>
     )
 }
