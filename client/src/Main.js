@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {Route, Switch} from 'react-router-dom';
 import NavBar from "./Navbar";
 import Feed from "./Feed"
@@ -6,6 +7,18 @@ import AllPost from './AllPost'
 import Resources from './Resources'
 
 function Main({setUser, quote, user, allPost, setAllPost}){
+
+    // console.log(allPost)
+    
+    // const [search, setSearch] = useState('')
+    
+    // const filtered = allPost.filter(post => {
+    //     return(post.subject.toLowerCase().inlcudes(search.toLowerCase()))
+    // })
+
+    // function handleFilter(e){
+    //     setSearch(e.target.value)
+    // }
 
     return(
         <div>
