@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import LandingPage from "./LandingPage";
-import Home from "./Home";
 import Header from "./Header"
 import Main from "./Main";
 
@@ -9,6 +8,7 @@ function App() {
 
   const [quote, setQuote] = useState([])
   const [allPost, setAllPost] = useState([])
+  // const [search, setSearch] = useState('')
   
    useEffect(()=> {
     fetch('/quotes')
@@ -21,6 +21,10 @@ function App() {
       .then((resp) => resp.json())
       .then((allPost) => setAllPost(allPost))
   },[])
+
+  // const filtered = allPost.filter(p => {
+  //   return(p.subject.toLowerCase().inlcudes(search.toLowerCase()))
+  // })
   
   const [user, setUser] = useState(null)
 
@@ -37,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main  allPost={allPost} setAllPost={setAllPost} setUser={setUser} user={user} quote={quote}/>
+      <Main  allPost={allPost} setAllPost={setAllPost} setUser={setUser} user={user} quote={quote} />
     </div>
   );
 }
