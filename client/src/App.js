@@ -8,7 +8,6 @@ function App() {
 
   const [quote, setQuote] = useState([])
   const [allPost, setAllPost] = useState([])
-  // const [search, setSearch] = useState('')
   
    useEffect(()=> {
     fetch('/quotes')
@@ -22,10 +21,6 @@ function App() {
       .then((allPost) => setAllPost(allPost))
   },[])
 
-  // const filtered = allPost.filter(p => {
-  //   return(p.subject.toLowerCase().inlcudes(search.toLowerCase()))
-  // })
-  
   const [user, setUser] = useState(null)
 
   useEffect(() => {

@@ -8,7 +8,6 @@ function CreatePost({setAllPost, allPost, user}){
     })
 
     function handleChange(e){
-        // console.log(e.target.value)
         setNewPostInfo((currentInputs) => ({
             ...currentInputs,
             [e.target.name]: e.target.value

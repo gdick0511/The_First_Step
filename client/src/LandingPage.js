@@ -6,7 +6,6 @@ function LandingPage({onLogin}){
 
     return(
         <div>
-            {/* <h1>The First Step</h1> */}
             <div>
             <img src={Logo} id='logo'/>
             </div>
