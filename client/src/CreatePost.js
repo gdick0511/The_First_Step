@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function CreatePost({setAllPost, allPost, user}){
+function CreatePost({setAllPost, user}){
 
     const [newPostInfo,setNewPostInfo] = useState({
         subject: '',
