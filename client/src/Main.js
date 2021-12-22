@@ -15,7 +15,7 @@ function Main({setUser, quote, user, allPost, setAllPost}){
                     <Home quote={quote} user={user}/>
                 </Route>
                 <Route exact path='/feed'>
-                    <Feed allPost={allPost} setAllPost={setAllPost}/>
+                    <Feed allPost={allPost} setAllPost={setAllPost} user={user}/>
                 </Route>
                 <Route exact path='/all_post'>
                     <AllPost allPost={allPost} setAllPost={setAllPost} user={user}/>
