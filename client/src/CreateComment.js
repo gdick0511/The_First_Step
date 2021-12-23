@@ -1,12 +1,11 @@
 import {useState} from 'react'
-function CreateComment({body, username, commentableId, commentableType, user}){
+function CreateComment({body, username, commentableId, commentableType, user, setAllComments}){
 
     const [newCommentInfo, setNewCommentInfo] = useState({
         body: ''
     })
 
     function handleChange(e){
-        // console.log(e.target.value)
         setNewCommentInfo((currentInputs) => ({
             ...currentInputs,
             [e.target.name]: e.target.value
@@ -30,7 +29,13 @@ function CreateComment({body, username, commentableId, commentableType, user}){
             body: JSON.stringify(newComment)
         })
         .then((resp) => resp.json())
-        .then((comment) => console.log(comment))
+        .then((allComments) => {
+            setAllComments((currentComment) => [allComments,...currentComment])
+            setNewCommentInfo({
+                body: ''
+            })
+        })
+       
     }
 
     return(
@@ -53,3 +58,7 @@ function CreateComment({body, username, commentableId, commentableType, user}){
 }
 
 export default CreateComment;
+
+// setNewCommentInfo({
+//     body: ''
+// })

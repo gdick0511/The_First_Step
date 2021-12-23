@@ -8,6 +8,7 @@ function App() {
 
   const [quote, setQuote] = useState([])
   const [allPost, setAllPost] = useState([])
+  const [allComments, setAllComments] = useState([])
   
    useEffect(()=> {
     fetch('/quotes')
@@ -31,12 +32,20 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    fetch('/comments')
+    .then((resp) => resp.json())
+    .then((allComments) => setAllComments(allComments))
+  }, [])
+
+  // console.log(allComments)
+
   if (!user) return <LandingPage onLogin={setUser} />
 
   return (
     <div className="App">
       <Header />
-      <Main  allPost={allPost} setAllPost={setAllPost} setUser={setUser} user={user} quote={quote} />
+      <Main  allPost={allPost} setAllPost={setAllPost} setUser={setUser} user={user} quote={quote} allComments={allComments} setAllComments={setAllComments}/>
     </div>
   );
 }
