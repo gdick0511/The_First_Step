@@ -10,7 +10,6 @@ function SignUp({onLogin}){
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log('yeet')
         const userSignup = {
             email: signUp.email,
             username: signUp.username,

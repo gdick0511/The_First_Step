@@ -33,7 +33,6 @@ function CreatePost({setAllPost, user}){
         .then((resp) => resp.json())
         .then((allPost) => {
             setAllPost((currentPost) => [allPost,...currentPost])
-            console.log(allPost)
             setNewPostInfo({
                 subject: '',
                 body: ''

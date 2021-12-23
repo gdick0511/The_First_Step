@@ -18,3 +18,5 @@ class CommentsController < ApplicationController
         params.permit(:body, :commentable_type, :commentable_id, :user_id)
     end
 end
+
+# index - Comment.where("commentable_type = 'Post'")

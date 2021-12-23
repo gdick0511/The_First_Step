@@ -1,22 +1,27 @@
 import {useState} from 'react'
 import CreateComment from './CreateComment'
+import OneComment from './OneComment'
 
-function FeedCard({subject, body, username, id, user}){
+function FeedCard({subject, body, username, id, user, setAllComments, comments}){
 
     const [showCreateComment, setShowCreateComment] = useState(false)
-
+    
     function handleCreatePost(){
-        // console.log('yeet')
         setShowCreateComment((current) => !current)
     }
-
+    
+    // console.log(comments)
+    const Lisa = comments.map((comment) => <OneComment comment={comment}/>)
+    
+    // console.log(Lisa)
     return(
         <div>
             <h3>{subject}</h3>
             <p>{body}</p>
             <h5>Posted by: {username}</h5>
+            <p>{Lisa}</p>
                 <button onClick={handleCreatePost}>{showCreateComment ? "Cancel" : "Leave a comment"}
-                </button>{showCreateComment ? <CreateComment commentableId={id} commentableType={'Post'} username={username} body={body} user={user}/> : null} 
+                </button>{showCreateComment ? <CreateComment commentableId={id} commentableType={'Post'} username={username} body={body} user={user} setAllComments={setAllComments}/> : null} 
         </div>
     )
 }
