@@ -32,11 +32,11 @@ function App() {
     });
   }, []);
 
-  useEffect(() => {
-    fetch('/comments')
-    .then((resp) => resp.json())
-    .then((allComments) => setAllComments(allComments))
-  }, [])
+  // useEffect(() => {
+  //   fetch('/comments')
+  //   .then((resp) => resp.json())
+  //   .then((allComments) => setAllComments(allComments))
+  // }, [])
 
   // console.log(allComments)
 

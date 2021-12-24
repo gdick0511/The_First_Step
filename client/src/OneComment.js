@@ -1,7 +1,6 @@
 
 function OneComment({comment: {body, user:{username}}}){
 
-    // console.log(comment)
     return(
         <div>
             <p>{body}</p>

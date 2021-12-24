@@ -2,7 +2,7 @@ import {useState} from 'react'
 import CreateComment from './CreateComment'
 import OneComment from './OneComment'
 
-function FeedCard({subject, body, username, id, user, setAllComments, comments}){
+function FeedCard({subject, body, username, id, user, setAllComments, comments, setAllPost}){
 
     const [showCreateComment, setShowCreateComment] = useState(false)
     
@@ -21,7 +21,7 @@ function FeedCard({subject, body, username, id, user, setAllComments, comments})
             <h5>Posted by: {username}</h5>
             <p>{Lisa}</p>
                 <button onClick={handleCreatePost}>{showCreateComment ? "Cancel" : "Leave a comment"}
-                </button>{showCreateComment ? <CreateComment commentableId={id} commentableType={'Post'} username={username} body={body} user={user} setAllComments={setAllComments}/> : null} 
+                </button>{showCreateComment ? <CreateComment commentableId={id} commentableType={'Post'} username={username} body={body} user={user} setAllComments={setAllComments} setAllPost={setAllPost}/> : null} 
         </div>
     )
 }

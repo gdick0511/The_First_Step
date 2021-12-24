@@ -16,7 +16,6 @@ function CreatePost({setAllPost, user}){
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log("I have been clicked")
         const newPost= {
             subject: newPostInfo.subject,
             body: newPostInfo.body,

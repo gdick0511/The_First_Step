@@ -1,5 +1,5 @@
 import {useState} from 'react'
-function CreateComment({body, username, commentableId, commentableType, user, setAllComments}){
+function CreateComment({body, username, commentableId, commentableType, user, setAllComments, setAllPost}){
 
     const [newCommentInfo, setNewCommentInfo] = useState({
         body: ''
@@ -13,6 +13,7 @@ function CreateComment({body, username, commentableId, commentableType, user, se
     }
 
     function handleSubmit(e){
+        console.log('hello')
         e.preventDefault()
         const newComment = {
             body: newCommentInfo.body,
@@ -29,8 +30,8 @@ function CreateComment({body, username, commentableId, commentableType, user, se
             body: JSON.stringify(newComment)
         })
         .then((resp) => resp.json())
-        .then((allComments) => {
-            setAllComments((currentComment) => [allComments,...currentComment])
+        .then((theComment) => {
+            setAllPost((currentPosts) => currentPosts.map((p) => p.id === commentableId ? {...p, comments:[...p.comments, theComment]} : p))
             setNewCommentInfo({
                 body: ''
             })
@@ -59,6 +60,3 @@ function CreateComment({body, username, commentableId, commentableType, user, se
 
 export default CreateComment;
 
-// setNewCommentInfo({
-//     body: ''
-// })
