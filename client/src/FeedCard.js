@@ -5,23 +5,28 @@ import OneComment from './OneComment'
 function FeedCard({subject, body, username, id, user, setAllComments, comments, setAllPost}){
 
     const [showCreateComment, setShowCreateComment] = useState(false)
+
+    const [showComments, setShowComments] = useState(false)
     
     function handleCreatePost(){
         setShowCreateComment((current) => !current)
     }
+
+    function handleShowComments(){
+        setShowComments((current) => !current)
+    }
     
-    // console.log(comments)
     const Lisa = comments.map((comment) => <OneComment comment={comment}/>)
     
-    // console.log(Lisa)
     return(
         <div>
             <h3>{subject}</h3>
             <p>{body}</p>
             <h5>Posted by: {username}</h5>
-            <p>{Lisa}</p>
+            {/* <p>{Lisa}</p> */}
                 <button onClick={handleCreatePost}>{showCreateComment ? "Cancel" : "Leave a comment"}
                 </button>{showCreateComment ? <CreateComment commentableId={id} commentableType={'Post'} username={username} body={body} user={user} setAllComments={setAllComments} setAllPost={setAllPost}/> : null} 
+                <button onClick={handleShowComments}>{showComments ? "Hide Comments" : "Show Comments"}</button>{showComments ? <p>{Lisa}</p> : null}
         </div>
     )
 }
