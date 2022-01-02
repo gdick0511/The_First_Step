@@ -25,7 +25,7 @@ function NavBar({onLogout}){
                 Feed
             </NavLink>
             <NavLink className='navlinks' to='/all_post'>
-                All Post
+                Your Post
             </NavLink>
             <NavLink className='navlinks' to='/resources'>
                 Resources
