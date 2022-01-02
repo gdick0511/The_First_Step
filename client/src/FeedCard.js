@@ -19,7 +19,7 @@ function FeedCard({subject, body, username, id, user, setAllComments, comments, 
     const Lisa = comments.map((comment) => <OneComment comment={comment}/>)
     
     return(
-        <div>
+        <div id="feedcard">
             <h3>{subject}</h3>
             <p>{body}</p>
             <h5>Posted by: {username}</h5>
