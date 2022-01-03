@@ -2,7 +2,7 @@
 function OneComment({comment: {body, user:{username}}}){
 
     return(
-        <div>
+        <div id='commentcards'>
             <p>{body}</p>
             <div>
              Comment left by: {username}

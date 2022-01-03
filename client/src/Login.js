@@ -49,7 +49,7 @@ function Login({onLogin}){
                     <input onChange={handleChange} type='password' placeholder='password' name='password'value={user.password}/>
                 </label>
                 <label>
-                    <button>Log In</button>
+                    <button id='button'>Log In</button>
                 </label>
             </form>
         </div>
