@@ -19,32 +19,78 @@ code {
 
 #header{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #logo{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 15rem;
+  width: auto;
 }
 
 #feedcard{
-  display: row;
-  justify-content: center;
+  display: flexbox;
+  justify-content: space-evenly;
   width: 50%;
   margin: 3%;
   border-radius: 20px;
-  border: solid;
-  padding: 2rem;
+  border: thin;
+  padding: 2%;
   box-shadow: 5px 10px 8px 10px #888888;
 }
 
 #userPostCard{
-  display: row;
+  display: flexbox;
   justify-content: center;
   width: 50%;
   margin: 3%;
   border-radius: 20px;
-  border: solid;
-  padding: 2rem;
+  border: thin;
+  padding: 2%;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+#feed_search h1{
+  display: flex;
+  justify-content: flex-start;
+  margin: 3%;
+}
+
+#search{
+  display: flex;
+  margin: 3%;
+}
+
+#resources{
+  display: flexbox;
+  justify-content: center;
+  width: 50%;
+  margin: 3%;
+  border-radius: 20px;
+  border: thin;
+  padding: 2%;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+#login{
+  display: flexbox;
+  justify-content: center;
+  width: 40%;
+  margin: 3%;
+  border-radius: 20px;
+  border: thin;
+  padding: 2%;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+#signup{
+  display: flexbox;
+  justify-content: center;
+  width: 40%;
+  margin: 3%;
+  border-radius: 20px;
+  border: thin;
+  padding: 2%;
   box-shadow: 5px 10px 8px 10px #888888;
 }

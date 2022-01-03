@@ -6,7 +6,7 @@ function Search({setSearch, search}){
     }
 
     return(
-        <div>
+        <div id='search'>
             <label htmlFor="search">
                 Search:
                 <input onChange={handleSearch} value={search} type='text' name='search' placeholder='Search for a topic'></input>
