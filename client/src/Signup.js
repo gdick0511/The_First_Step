@@ -38,7 +38,7 @@ function SignUp({onLogin}){
     }
 
     return(
-        <div>
+        <div id='signup'>
             <p>Dont have an Account? Sign Up</p>
             <form onSubmit={handleSubmit}>
                 <label>

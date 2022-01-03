@@ -14,7 +14,7 @@ function Feed({allPost, user, setAllComments, setAllPost}){
     })
 
     return(
-        <div>
+        <div id="feed_search">
             <h1>Feed</h1>
             <Search search={search} setSearch={setSearch}/>
             {userPosts}

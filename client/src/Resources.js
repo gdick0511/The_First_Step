@@ -4,7 +4,7 @@ function Resources(){
     return(
         <div>
             <h1>Resources</h1>
-            <ul>
+            <ul id='resources'>
                 <li>
                     <a href="https://www.aa.org/" target="_blank">Alcoholics Anonymous</a>
                 </li>
