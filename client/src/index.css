@@ -1,4 +1,6 @@
-
+*{
+  font-family: 'Raleway', sans-serif;
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -40,71 +42,86 @@ code {
   border-radius: 10%;
   height: 15rem;
   width: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #feedcard{
   display: flexbox;
   justify-content: center;
   width: 50%;
-  margin: 3%;
+  margin: auto;
+  margin-bottom: 2rem;
   border-radius: 20px;
   border: thin;
   padding: 2%;
   box-shadow: 5px 10px 8px 10px #888888;
   color: black;
   background-color: white;
+  text-align: center;
 }
 
 
 #feed_search h1{
   display: flex;
   justify-content: flex-start;
-  margin: 3%;
-  box-shadow: 5px 10px 8px 10px #888888;
+  position: center;
+  /* margin: 3%; */
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  /* box-shadow: 5px 10px 8px 10px #888888; */
   border-radius: 20px;
   width: 20%;
   padding: 2%;
-  color: black;
-  background-color: white;
+  /* color: black; */
+  color: white;
+  /* background-color: rgba(255, 255, 255, 0); */
 }
 
 #resourcetitle{
   display: flex;
-  justify-content: flex-start;
-  margin: 3%;
-  box-shadow: 5px 10px 8px 10px #888888;
+  justify-content: center;
+  /* margin: 3%; */
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  /* box-shadow: 5px 10px 8px 10px #888888; */
   border-radius: 20px;
   width: 20%;
   padding: 2%;
-  color: black;
-  background-color: white;
+  color: white;
+  /* background-color: white; */
 }
 
 #userPostCard{
   display: flexbox;
   justify-content: center;
   width: 50%;
-  margin: 3%;
+  margin: auto;
+  margin-bottom: 2rem;
   border-radius: 20px;
   border: thin;
   padding: 2%;
   box-shadow: 5px 10px 8px 10px #888888;
   color: black;
   background-color: white;
+  text-align: center;
 }
 
 #posttitle{
   display: flex;
-  justify-content: flex-start;
-  margin: 3%;
-  box-shadow: 5px 10px 8px 10px #888888;
+  justify-content: center;
+  /* margin: 3%; */
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  /* box-shadow: 5px 10px 8px 10px #888888; */
   border-radius: 20px;
   width: 20%;
   padding: 2%;
-  color: black;
-  background-color: white;
+  color: white;
+  /* background-color: white; */
 }
 
 #commentcards{
@@ -120,12 +137,15 @@ code {
 
 #search{
   display: flex;
+  justify-content: center;
   margin: 3%;
   color: white;
   font: bold;
 }
 
 #searchinput{
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
   width: 12rem;
 }
@@ -134,13 +154,25 @@ code {
   display: flexbox;
   justify-content: center;
   width: 50%;
-  margin: 3%;
+  margin: auto;
+  margin-bottom: 2rem;
   border-radius: 20px;
   border: thin;
   padding: 2%;
   box-shadow: 5px 10px 8px 10px #888888;
   color: black;
   background-color: white;
+  text-align: center;
+  /* display: flexbox;
+  justify-content: center;
+  width: 50%;
+  margin: 3%;
+  border-radius: 20px;
+  border: thin;
+  padding: 2%;
+  box-shadow: 5px 10px 8px 10px #888888;
+  color: black;
+  background-color: white; */
 }
 
 .resource_text{
@@ -155,7 +187,10 @@ code {
   display: flexbox;
   justify-content: center;
   width: 40%;
-  margin: 3%;
+  /* margin: 3%; */
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   border-radius: 20px;
   border: thin;
   padding: 2%;
@@ -167,23 +202,30 @@ code {
 #hometitle{
   color: white;
   padding: 2%;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#hometitle h1{
+  display: flex;
+  justify-content: center;
 }
 
 #login{
   display: flexbox;
   justify-content: center;
-  width: 40%;
-  margin: 3%;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
   border-radius: 20px;
   border: thin;
   padding: 2%;
   box-shadow: 5px 10px 8px 10px #888888;
   color: black;
   background-color: white;
-}
-
-#signup{
-  display: flexbox;
+  text-align: center;
+  /* display: flexbox;
   justify-content: center;
   width: 40%;
   margin: 3%;
@@ -192,7 +234,32 @@ code {
   padding: 2%;
   box-shadow: 5px 10px 8px 10px #888888;
   color: black;
+  background-color: white; */
+}
+
+#signup{
+  display: flexbox;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  border: thin;
+  padding: 2%;
+  box-shadow: 5px 10px 8px 10px #888888;
+  color: black;
   background-color: white;
+  text-align: center;
+  /* display: flexbox;
+  justify-content: center;
+  width: 40%;
+  margin: 3%;
+  border-radius: 20px;
+  border: thin;
+  padding: 2%;
+  box-shadow: 5px 10px 8px 10px #888888;
+  color: black;
+  background-color: white; */
 }
 
 #postform{
@@ -250,8 +317,12 @@ code {
 }
 
 #postbutton{
+  display: flex;
+  justify-self: center;
   border-radius: 20px;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  margin: auto;
+  margin-bottom: 2%;
   padding: 5px;
 }
 

@@ -13,7 +13,7 @@ function AllPost({allPost, setAllPost, user}){
     }
 
     const current_users_post = allPost.filter((post) => post.user.id === user.id)
-    const current_users_post_mapped = current_users_post.map((post) => <UsersPost id={post.id} body={post.body} subject={post.subject} />)
+    const current_users_post_mapped = current_users_post.map((post) => <UsersPost id={post.id} body={post.body} subject={post.subject} comments={post.comments}/>)
 
     // console.log(current_users_post)
  
