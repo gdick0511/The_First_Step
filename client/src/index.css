@@ -163,16 +163,7 @@ code {
   color: black;
   background-color: white;
   text-align: center;
-  /* display: flexbox;
-  justify-content: center;
-  width: 50%;
-  margin: 3%;
-  border-radius: 20px;
-  border: thin;
-  padding: 2%;
-  box-shadow: 5px 10px 8px 10px #888888;
-  color: black;
-  background-color: white; */
+ background-color: white; 
 }
 
 .resource_text{
@@ -225,16 +216,6 @@ code {
   color: black;
   background-color: white;
   text-align: center;
-  /* display: flexbox;
-  justify-content: center;
-  width: 40%;
-  margin: 3%;
-  border-radius: 20px;
-  border: thin;
-  padding: 2%;
-  box-shadow: 5px 10px 8px 10px #888888;
-  color: black;
-  background-color: white; */
 }
 
 #signup{
@@ -250,16 +231,6 @@ code {
   color: black;
   background-color: white;
   text-align: center;
-  /* display: flexbox;
-  justify-content: center;
-  width: 40%;
-  margin: 3%;
-  border-radius: 20px;
-  border: thin;
-  padding: 2%;
-  box-shadow: 5px 10px 8px 10px #888888;
-  color: black;
-  background-color: white; */
 }
 
 #postform{
@@ -320,7 +291,6 @@ code {
   display: flex;
   justify-self: center;
   border-radius: 20px;
-  /* margin-left: 5%; */
   margin: auto;
   margin-bottom: 2%;
   padding: 5px;
