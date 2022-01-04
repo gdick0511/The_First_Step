@@ -9,12 +9,13 @@ function App() {
   const [quote, setQuote] = useState([])
   const [allPost, setAllPost] = useState([])
   const [allComments, setAllComments] = useState([])
+  const [user, setUser] = useState(null)
   
    useEffect(()=> {
     fetch('/quotes')
     .then(resp => resp.json())
     .then((data) => setQuote({q:data.quote[0].q, a:data.quote[0].a}))
-  },[])
+  },[user])
     
   useEffect(() => {
       fetch('/posts')
@@ -22,7 +23,6 @@ function App() {
       .then((allPost) => setAllPost(allPost))
   },[])
 
-  const [user, setUser] = useState(null)
 
   useEffect(() => {
     fetch("/me").then((resp) => {
