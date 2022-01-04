@@ -41,14 +41,14 @@ function CreateComment({body, username, commentableId, commentableType, user, se
 
     return(
         <div>
-            <form id='commentform' onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <label>
                     <h4>Share something</h4>
-                    <textarea id='commentformbody' onChange={handleChange} type='text' name='body' placeholder='leave a comment... ' value={newCommentInfo.body}></textarea>
+                    <textarea onChange={handleChange} type='text' name='body' placeholder='leave a comment... ' value={newCommentInfo.body}></textarea>
                 </label>
                 <label>
                     <div>
-                        <button id='button'>
+                        <button>
                             Post it
                         </button>
                     </div>

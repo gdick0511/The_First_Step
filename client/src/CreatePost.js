@@ -41,18 +41,18 @@ function CreatePost({setAllPost, user}){
 
     return(
         <div>
-            <form id='postform' onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <label>
                     <h4>Subject</h4>
-                    <input id='postsubject' onChange={handleChange} type='text' name='subject' placeholder='subject' value={newPostInfo.subject}></input>
+                    <input onChange={handleChange} type='text' name='subject' placeholder='subject' value={newPostInfo.subject}></input>
                 </label>
                 <label>
                     <h4>Body</h4>
-                    <textarea id='postbody' onChange= {handleChange} type='text' name='body' placeholder='share something...' value={newPostInfo.body}></textarea>
+                    <textarea onChange= {handleChange} type='text' name='body' placeholder='share something...' value={newPostInfo.body}></textarea>
                 </label>
                 <label>
                     <div>
-                        <button id='button'>
+                        <button>
                             Share it
                         </button>
                     </div>

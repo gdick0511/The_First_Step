@@ -9,7 +9,7 @@ function Search({setSearch, search}){
         <div id='search'>
             <label htmlFor="search">
                 Search:
-                <input id='searchinput' onChange={handleSearch} value={search} type='text' name='search' placeholder='Search for a topic'></input>
+                <input onChange={handleSearch} value={search} type='text' name='search' placeholder='Search for a topic'></input>
             </label>
         </div>    
         )

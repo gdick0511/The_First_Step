@@ -24,9 +24,9 @@ function FeedCard({subject, body, username, id, user, setAllComments, comments, 
             <p>{body}</p>
             <h5>Posted by: {username}</h5>
             {/* <p>{Lisa}</p> */}
-                <button id='button' onClick={handleCreatePost}>{showCreateComment ? "Cancel" : "Leave a comment"}
+                <button onClick={handleCreatePost}>{showCreateComment ? "Cancel" : "Leave a comment"}
                 </button>{showCreateComment ? <CreateComment commentableId={id} commentableType={'Post'} username={username} body={body} user={user} setAllComments={setAllComments} setAllPost={setAllPost}/> : null} 
-                <button id='button' onClick={handleShowComments}>{showComments ? "Hide Comments" : "Show Comments"}</button>{showComments ? <p>{Lisa}</p> : null}
+                <button onClick={handleShowComments}>{showComments ? "Hide Comments" : "Show Comments"}</button>{showComments ? <p>{Lisa}</p> : null}
         </div>
     )
 }

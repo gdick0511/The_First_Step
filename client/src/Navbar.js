@@ -19,10 +19,10 @@ function NavBar({onLogout}){
     return(
         <div id='navbar'>
             <NavLink className='navlinks' to='/home'>
-                Home 
+                Home
             </NavLink>
             <NavLink className='navlinks' to='/feed'>
-                Community Feed
+                Feed
             </NavLink>
             <NavLink className='navlinks' to='/all_post'>
                 Your Post
@@ -30,7 +30,7 @@ function NavBar({onLogout}){
             <NavLink className='navlinks' to='/resources'>
                 Resources
             </NavLink>
-            <button id='logoutbutton' as={Link} to='/' onClick={handleLogOut}>
+            <button as={Link} to='/' onClick={handleLogOut}>
                 Logout 
             </button>
         </div>
