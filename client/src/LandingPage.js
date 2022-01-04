@@ -6,6 +6,9 @@ function LandingPage({onLogin}){
 
     return(
         <div id='landingpage'>
+            {/* <video autoPlay loop muted>
+                <source src={Video} type='video/mp4'/>
+            </video> */}
             <div id='logo'>
             <img id='logo'src={Logo}/>
             </div>

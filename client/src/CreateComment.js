@@ -44,7 +44,7 @@ function CreateComment({body, username, commentableId, commentableType, user, se
             <form id='commentform' onSubmit={handleSubmit}>
                 <label>
                     <h4>Share something</h4>
-                    <textarea id='commentformbody' onChange={handleChange} type='text' name='body' placeholder='leave a comment... ' value={newCommentInfo.body}></textarea>
+                    <textarea id='commentformbody' required onChange={handleChange} type='text' name='body' placeholder='leave a comment... ' value={newCommentInfo.body}></textarea>
                 </label>
                 <label>
                     <div>

@@ -23,6 +23,11 @@ function Resources(){
                 <li>
                     <a className='resource_text' href="https://al-anon.org/" target="_blank">Al-Anon Family Groups</a> 
                 </li>
+                <br>
+                </br>
+                <li>
+                    <a className='resource_text' href="https://saa-recovery.org/" target="_blank">Sex Addicts Anonymous</a> 
+                </li>
             </ul>
         </div>
     )
