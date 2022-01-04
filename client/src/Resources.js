@@ -3,19 +3,25 @@ function Resources(){
 
     return(
         <div>
-            <h1>Resources</h1>
+            <h1 id='resourcetitle'>Resources</h1>
             <ul id='resources'>
                 <li>
-                    <a href="https://www.aa.org/" target="_blank">Alcoholics Anonymous</a>
+                    <a className='resource_text' href="https://www.aa.org/" target="_blank">Alcoholics Anonymous</a>
                 </li>
+                <br>
+                </br>
                 <li >
-                     <a href="https://suicidepreventionlifeline.org/chat/" target="_blank">Suicide Prevention Chat</a>
+                     <a className='resource_text' href="https://suicidepreventionlifeline.org/chat/" target="_blank">Suicide Prevention Chat</a>
                 </li>
+                <br>
+                </br>
                 <li>
-                    <a href="https://www.samhsa.gov/find-treatment" target="_blank">Substance Abuse and Mental Health Services Administration</a>
+                    <a className='resource_text' href="https://www.samhsa.gov/find-treatment" target="_blank">Substance Abuse and Mental Health Services Administration</a>
                 </li>
+                <br>
+                </br>
                 <li>
-                    <a href="https://al-anon.org/" target="_blank">Al-Anon Family Groups</a> 
+                    <a className='resource_text' href="https://al-anon.org/" target="_blank">Al-Anon Family Groups</a> 
                 </li>
             </ul>
         </div>

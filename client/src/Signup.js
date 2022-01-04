@@ -54,7 +54,7 @@ function SignUp({onLogin}){
                     <input onChange={handleChange} type='password'name='password' placeholder='password'value={signUp.password}/>
                 </label>
                 <label>
-                    <button>Sign Up</button>
+                    <button id='button'>Sign Up</button>
                 </label>
             </form>
         </div>
