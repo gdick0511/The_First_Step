@@ -32,14 +32,6 @@ function App() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   fetch('/comments')
-  //   .then((resp) => resp.json())
-  //   .then((allComments) => setAllComments(allComments))
-  // }, [])
-
-  // console.log(allComments)
-
   if (!user) return <LandingPage onLogin={setUser} />
 
   return (
