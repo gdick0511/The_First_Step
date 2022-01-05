@@ -43,15 +43,15 @@ function SignUp({onLogin}){
             <form onSubmit={handleSubmit}>
                 <label>
                     <h4>Email</h4>
-                    <input onChange={handleChange} type='text' name='email' placeholder='email'value={signUp.email}/>
+                    <input className='signupinput' required onChange={handleChange} type='text' name='email' placeholder='email'value={signUp.email}/>
                 </label>
                 <label>
                     <h4>Username</h4>
-                    <input onChange={handleChange} type='text'name='username' placeholder='username'value={signUp.username}/>
+                    <input className='signupinput' required onChange={handleChange} type='text'name='username' placeholder='username'value={signUp.username}/>
                 </label>
                 <label>
                     <h4>Password</h4>
-                    <input onChange={handleChange} type='password'name='password' placeholder='password'value={signUp.password}/>
+                    <input className='signupinput' required onChange={handleChange} type='password'name='password' placeholder='password'value={signUp.password}/>
                 </label>
                 <label>
                     <div>

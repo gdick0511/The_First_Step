@@ -42,11 +42,11 @@ function Login({onLogin}){
             <form onSubmit={handleSubmit}>
                 <label>
                     <h4>Username</h4>
-                    <input onChange={handleChange} type='text' placeholder='username' name='username'value={user.username}/>
+                    <input className='logininput' required onChange={handleChange} type='text' placeholder='username' name='username'value={user.username}/>
                 </label>
                 <label>
                     <h4>Password</h4>
-                    <input onChange={handleChange} type='password' placeholder='password' name='password'value={user.password}/>
+                    <input className='logininput' required onChange={handleChange} type='password' placeholder='password' name='password'value={user.password}/>
                 </label>
                 <label>
                     <div>
