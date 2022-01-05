@@ -1,7 +1,7 @@
 import UsersPostComments from "./UsersPostComments";
 import {useState} from 'react'
 
-function UsersPost({body, subject, comments}){
+function UsersPost({body, subject, comments, id, allPost, setAllPost}){
 
     const [showComments, setShowComments] = useState(false)
 
@@ -14,6 +14,12 @@ function UsersPost({body, subject, comments}){
 
     function handleDelete(){
         console.log('yeet')
+        fetch(`/delete/${id}`, {
+            method: 'DELETE',
+        })
+        .then((resp)=> {
+            setAllPost((allPost) => allPost.filter((post) => post.id !== id))
+        })
     }
 
     return(
