@@ -182,7 +182,19 @@ code {
   color: black;
   background-color: white;
   text-align: center;
- background-color: white; 
+  list-style-type: none
+}
+
+a.resource_text:hover{
+  color: orange;
+}
+
+.navlinks:hover{
+  color: orange;
+}
+
+#logoutbutton:hover{
+  background-color: orange;
 }
 
 .resource_text{
