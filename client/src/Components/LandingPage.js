@@ -1,14 +1,11 @@
 import Login from "./Login";
 import Signup from "./Signup"
-import Logo from './Logo.png'
+import Logo from '../Images/Logo.png'
 
 function LandingPage({onLogin}){
 
     return(
         <div id='landingpage'>
-            {/* <video autoPlay loop muted>
-                <source src={Video} type='video/mp4'/>
-            </video> */}
             <div id='logo'>
             <img id='logo'src={Logo}/>
             </div>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import LandingPage from "./LandingPage";
-import Header from "./Header"
-import Main from "./Main";
+import LandingPage from "./Components/LandingPage";
+import Header from "./Components/Header"
+import Main from "./Components/Main";
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         resp.json().then(setUser);
       }
     });
-  }, []);
+  },[]);
 
   if (!user) return <LandingPage onLogin={setUser} />
 
