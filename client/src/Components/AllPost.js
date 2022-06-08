@@ -4,12 +4,10 @@ import UsersPost from './UsersPost'
 
 function AllPost({allPost, setAllPost, user}){
 
-    const [usersPost, setUsersPost] = useState([])
     const [showCreatePost, setShowCreatePost] =useState(false)
 
     function handleCreatePost(){
         setShowCreatePost((showCreatePost)=> !showCreatePost)
-        // console.log('yeet')
     }
 
     const current_users_post = allPost.filter((post) => post.user.id === user.id)

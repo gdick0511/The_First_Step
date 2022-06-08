@@ -1,4 +1,5 @@
 import Logo from '../Images/Logo.png'
+import Logo2 from '../Images/Logo2.png'
 
 
 function Header(){
